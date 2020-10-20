@@ -18,7 +18,7 @@ infoBtns.forEach((btn) => {
 
                 for (const item of galleryItems) {
                     // item.style.backgroundColor = "rgb(20, 20, 19)";
-                    // item.style.backgroundBlendMode = "normal"
+                    item.style.backgroundBlendMode = ""
                 }
 
             } else {
@@ -30,7 +30,7 @@ infoBtns.forEach((btn) => {
 
                 for (const item of galleryItems) {
                     // item.style.backgroundColor = "rgb(20, 20, 19)";
-                    // item.style.backgroundBlendMode = "multiply"
+                    item.style.backgroundBlendMode = "multiply"
                 }
             }
 

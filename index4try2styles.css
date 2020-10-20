@@ -132,7 +132,15 @@ li {
     justify-content: center;
     font-size: 3rem;
     color: white;
-    animation: slideDownShort 3.5s linear;
+    animation: widthAni 3.5s linear;
+}
+@keyframes widthAni{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
 }
 .general-arrow{
     position: absolute;
@@ -202,7 +210,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 font-size: 1rem;
-animation: slideDown 2s linear;
 }
 
 
@@ -211,8 +218,11 @@ animation: slideDown 2s linear;
     /* background-color: rgba(131, 146, 153, 0.507); */
     height:60vh;
     overflow: hidden;
-    animation: slideDown 3s linear;
+    /* animation: slideRight 3s linear; */
 
+}
+.sld-animation{
+        animation: rollWidthImg 4s linear;
 
 }
 .gallery__image-section:focus{
@@ -220,32 +230,39 @@ animation: slideDown 2s linear;
     transition:transform 4s linear; */
 
 }
+@keyframes rollWidthImg{
+    0%{
+        height:0vh;
+    }
+    100% {
+        height: 60vh;
+    }
+}
 
 .bg-1{
     z-index: -10;
         background-image: url('images/plotter/DSC_0304.JPG');
+        animation: rollWidthImg 2s linear;
 
-    /* animation: slideRight 2s linear; */
 
 }
 .bg-2{
     z-index: -10;
     background-image: url('images/loom/IMG_20200507_221849.jpg');
-    /* animation: slideRight 2s linear; */
+    animation: rollWidthImg 2s linear;
 
 }
 .bg-3{
     z-index: -10; 
        background-image: url('images/plotter/DSC_0295.JPG');
-
-    /* animation: slideRight 2s linear; */
+       animation: rollWidthImg 2s linear;
 
 }
 .bg-4{
     z-index: -10;  
       background-image: url('images/loom/IMG_20200507_221849.jpg');
+      animation: rollWidthImg 2s linear;
 
-    /* animation: slideRight 2s linear; */
 
 }
 @keyframes slideRight{
@@ -257,13 +274,27 @@ animation: slideDown 2s linear;
     }
 }
 .gallery__overlay-text{
-    visibility: hidden;
+    /* visibility: hidden; */
+    width: 80%;
+    margin: 0 auto;
+    animation: slideRight 3s linear;
+
 }
 .gallery__overlay-h1{
     font-size: 1.5rem;
 }
 .gallery__overlay-p{
     font-size: 0.8rem;
+    
+
+}
+@keyframes rollText{
+    0%{
+        width:0;
+    }
+    100% {
+        width:80%;
+    }
 }
 /* bottom */
 .gallery__empty-section{
@@ -278,7 +309,6 @@ animation: slideDown 2s linear;
     text-align: center;
     font-size: 2.3rem;
     color: var(--main-txt-col);
-    animation: slideDownshorter 2s linear;
 }
 @keyframes slideDownshorter{
     0%{
@@ -358,7 +388,7 @@ animation: slideDown 2s linear;
   
 
 .gallery__item:hover{
-    background-color: rgb(20, 20, 19);
+    /* background-color: rgb(20, 20, 19); */
     background-blend-mode: multiply; 
     transition: all 10s linear;
 }
@@ -376,7 +406,6 @@ animation: slideDown 2s linear;
     display: flex;
     justify-content: space-between; 
     color:#fff;
-animation: slideDown 3s linear;
 
   }
   
@@ -389,7 +418,7 @@ animation: slideDown 3s linear;
       height:100%;
   }
   .gallery__button:hover{
-      transform: scale(2);
+      /* transform: scale(2); */
       transition: transform 0.8s ease-in-out, color 2s ease-in-out;
       /* background-color: grey; */
       color: #000;
