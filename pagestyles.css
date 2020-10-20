@@ -52,6 +52,9 @@ text-align: center;
         width:320px;
         height:215px;
     }
+    .extended-page__body-section-text p{
+        font-size: 0.8rem;
+    }
 }
 
 .extended-page__body-section-text iframe{
@@ -60,7 +63,7 @@ text-align: center;
 }
 
 .extended-page__body-section-text p{
-    font-size: 0.8rem;
+    font-size: .95rem;
 }
 
 .extended-page__body-section-text h2{
