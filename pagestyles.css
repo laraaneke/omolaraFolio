@@ -49,8 +49,8 @@ text-align: center;
         /* background-color: brown; */
     }
     iframe{
-        width:120px;
-        height:115px;
+        width:100%;
+        height:250px;
     }
     .extended-page__body-section-text p{
         font-size: 0.8rem;
