@@ -23,6 +23,7 @@ weavingBtns.forEach(btn => {
     btn.addEventListener("click", e => {
         weavingCont.style.display = 'block'
         galleryCont.style.display = 'none';
+        aboutContainer.style.display = "none";
 
 
     })
@@ -30,6 +31,7 @@ weavingBtns.forEach(btn => {
 weavingBackBtn.addEventListener("click", e => {
     weavingCont.style.display = 'none'
     galleryCont.style.display = 'block';
+    aboutContainer.style.display = "none";
 
 })
 
@@ -37,11 +39,13 @@ plotterBtns.forEach(btn => {
     btn.addEventListener("click", e => {
         plotterCont.style.display = 'block'
         galleryCont.style.display = 'none';
+        aboutContainer.style.display = "none";
     })
 })
 plotterBackBtn.addEventListener("click", e => {
     plotterCont.style.display = 'none'
     galleryCont.style.display = 'block';
+    aboutContainer.style.display = "none";
 
 })
 
@@ -87,21 +91,26 @@ aboutBtn.addEventListener("click", e => {
     if (aboutContainer.style.display === "block") {
         aboutBtn.innerHTML = "ABOUT";
         aboutContainer.style.display = "none";
+
         contactCont.style.display = "none";
 
-        // introCont.style.display = "block";
-        galleryCont.style.display = "block"
+        weavingCont.style.display = "none";
+        plotterCont.style.display = "none";
+
+        introCont.style.display = "none";
+        galleryCont.style.display = "block";
         // console.log(e);
 
-
-
     } else {
-        contactCont.style.display = "none";
         aboutBtn.innerHTML = "CLOSE";
         aboutContainer.style.display = "block";
 
+        weavingCont.style.display = "none";
+        plotterCont.style.display = "none";
         introCont.style.display = "none";
         galleryCont.style.display = "none";
+        contactCont.style.display = "none";
+
     }
 
 
