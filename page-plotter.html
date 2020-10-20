@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /*  */
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <!-- index 4 stylesheet -->
+    <link rel="stylesheet" href="index4try2styles.css" />
+    <link rel="stylesheet" href="pagestyles.css" />
+
+    <title>p2 Omolara Aneke</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <!-- side nav bar /////////////////////////-->
+        <div class="side-nav-container">
+            <ul class="side-nav__hamburger-container">
+                <!-- 1 -->
+                <li class="side-nav__social-list-item">
+                    <a href="#" class="side-nav__social-list-link">
+                        <i class="fas fa-bars side-nav__hamburger" id="ham"></i>
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="side-nav__social-container">
+                <!-- 1 -->
+                <li>
+                    <a href="index4try2.html" class="side-nav__about-link" id="js-page_aboutme">HOME</a>
+                </li>
+                <!-- 2 -->
+                <li class="side-nav__social-list-item">
+                    <a href="#" class="side-nav__social-list-link">
+                        <i class="fab fa-github"> </i>
+                    </a>
+                </li>
+                <!-- 3 -->
+                <li class="side-nav__social-list-item">
+                    <a href="#" class="side-nav__social-list-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="side-nav__social-list-item">
+                    <a href="#" class="side-nav__social-list-link">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- side bar////////////////////////// -->
+        <section id="sidebar" class="sidebar__container">
+            <ul>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">home</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">contact</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#gallery">portfolio</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#aboutme">about</a></li>
+            </ul>
+        </section>
+        <!-- end of sliding sidebar -->
+
+
+        <!-- start of about container  -->
+        <div class="extended-page__container">
+            <!-- 1 -->
+            <div class="extended-page__title-section">
+                <div class="extended-page__title-section-name"> Omolara
+                    Aneke</div>
+            </div>
+            <!-- 2 -->
+            <div class="extended-page__body-section" id="aboutme">
+                <div class="extended-page__body-section-text">
+                    <h1>Just Anoter Portrait Printer.</h1>
+                    <!-- video section -->
+                    <div class="extended-page__body-video">
+                        <iframe class="wm2" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe>
+                    </div>
+                    <br>
+
+                    <h2>Under The Hood </h2>
+                    <p> A suit made using a sewing machine is considered hand-crafted despite the machine-made
+                        interventions. In comparison, a portrait made using a stylus and device is considered a digital
+                        drawing. Intrigued by this sentiment, I thought back to my first day of undergrad. We were told
+                        to go out to the world and quickly sketch what we saw. The idea here was to gather as much
+                        information to later be called upon when looking for interesting shapes, lines and directions
+                        for women's clothing. I tried to emulate this process as much a possible from quickly drawing
+                        what it sees in the world down to the blind contour style line drawings. The idea was to
+                        automate the sometimes-taxing prototyping process in a very specific way that doesn't dismiss
+                        all
+                        human intervention.
+
+
+                    </p>
+                    <br>
+                    <p>Currently the process to take an image from pixels to plotted on paper is quite an involved
+                        process that
+                        uses a pleather of programs. Typically, an image is uploaded to Inkscape, the vector information
+                        is
+                        found, saved via a plugin extension, Arduino is loaded with GRBL uploaded, then processing is
+                        used to
+                        stream the file to the Arduino. I initially had ambitious plans to create a fully functional
+                        web-based
+                        application that prints the input without the added extra programs. This wasn't quite
+                        actualised.
+
+                        I took the opportunity to begin learning JavaScript so I make use of Vanilla js, OpenCV.js and
+                        P5.js.
+                        Together they allow me to make an application that takes in a picture or webcam still and
+                        produces a
+                        gcode file that is manually uploaded to the Source Rabbit gcode Sender software. The sender
+                        connects and
+                        streams the gcode to the Arduino setup moving the motors accordingly.
+
+                        My starting point was figuring out how to turn images into gcode without Inkscape. Initial
+                        testing
+                        involved finding and converting svg information into gcode but I couldn't figure out how to turn
+                        stills
+                        into svg files information. I then came a across a thread that explained I should first find the
+                        edges,
+                        then turn the edges into gcode. As vague as it seemed at the time, it was great information.</p>
+                    <br>
+                    <p> Vanilla js is used to encapsulate the various programs. It is here that I make the calls to
+                        OpenCv.js
+                        and P5js and draw the outcome to the canvas. OpenCv.js is used to process the still, it goes
+                        through
+                        various stages of manipulation from making grayscale, finding the edges then using the edges to
+                        find the
+                        contours. A delicate balance in needed to contrast the image just enough to pick up the
+                        important
+                        details without picking up the excess noise. Where I was hell bent on using blurring and
+                        thresholding
+                        just because I can, I was over processing the images resulting in a different line being found.
+                        The
+                        contours found are then used as the basis for coordinates sent through an algorithm that
+                        produces a file
+                        with the .gcode extension. P5js is used to easily use and manipulate the webcam stream. I
+                        enjoyed the
+                        look of the lines created when slit scan style images were fed through the system, so this was
+                        the
+                        starting point for the webcam manipulation. </p>
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <!-- 3 -->
+            <div class="extended-page__empty-section">
+                <!-- controls -->
+                <div class="page__controls">
+
+                    <a href="page-weaver.html"><i class="page-btn fas fa-angle-left"></i></a>
+                    <!-- <i class="fas fa-long-arrow-alt-left"></i> -->
+
+                    <a href="page-weaver.html"><i class=" page-btn fas fa-angle-right"></i></a>
+                    <!-- <i class="fas fa-long-arrow-alt-right"></i> -->
+
+                </div>
+            </div>
+            <!-- end of 3 boxes -->
+
+
+
+        </div>
+        <!-- end of about container  -->
+
+
+
+
+
+
+
+    </div>
+    <!-- end of whole page container -->
+    <script src="index4-sidenav.js"></script>
+    <!-- <script src="gallerycontrols.js"></script> -->
+    <!-- <script src="index4-infobutton.js"></script> -->
+    <script src="index4-dwn-abt-btn.js"></script>
+    <!-- <script src="index4-aboutBtn.js"></script> -->
+</body>
+
+</html>

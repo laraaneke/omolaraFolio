@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /*  */
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <!-- index 4 stylesheet -->
+    <link rel="stylesheet" href="index4try2styles.css" />
+    <link rel="stylesheet" href="pagestyles.css" />
+
+    <title>p2 Omolara Aneke</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <!-- side nav bar /////////////////////////-->
+        <div class="side-nav-container">
+            <ul class="side-nav__hamburger-container">
+                <!-- 1 -->
+                <li class="side-nav__social-list-item">
+                    <a href="#" class="side-nav__social-list-link">
+                        <i class="fas fa-bars side-nav__hamburger" id="ham"></i>
+                    </a>
+                </li>
+
+            </ul>
+            <ul class="side-nav__social-container">
+                <!-- 1 -->
+                <li>
+                    <a href="index4try2.html" class="side-nav__about-link" id="js-page_aboutme">HOME</a>
+                </li>
+                <!-- 2 -->
+                <li class="side-nav__social-list-item">
+                    <a href="#" class="side-nav__social-list-link">
+                        <i class="fab fa-github"> </i>
+                    </a>
+                </li>
+                <!-- 3 -->
+                <li class="side-nav__social-list-item">
+                    <a href="#" class="side-nav__social-list-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="side-nav__social-list-item">
+                    <a href="#" class="side-nav__social-list-link">
+                        <i class="fas fa-at"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- side bar////////////////////////// -->
+        <section id="sidebar" class="sidebar__container">
+            <ul>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">home</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#">contact</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#gallery">portfolio</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#aboutme">about</a></li>
+            </ul>
+        </section>
+        <!-- end of sliding sidebar -->
+
+
+        <!-- start of about container  -->
+        <div class="extended-page__container">
+            <!-- 1 -->
+            <div class="extended-page__title-section">
+                <div class="extended-page__title-section-name"> Omolara
+                    Aneke</div>
+            </div>
+            <!-- 2 -->
+            <div class="extended-page__body-section" id="aboutme">
+                <div class="extended-page__body-section-text">
+                    <h1>Digital Weaving Loom.</h1>
+                    <!-- video section -->
+                    <div class="extended-page__body-video">
+                        <iframe class="wm2" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe>
+                    </div>
+                    <br>
+
+                    <h2>Under The Hood </h2>
+                    <p> The system uses Arduino and Processing connected via the seiral port. the Arduino sketch is
+                        configured
+                        to receive a switch of bits containing 8 0’s and 1 from processing. I
+                        programmed two types of interactions into the processing sketch for the ruse to decide for
+                        themselves
+                        what feels more intuitive when weaving. You can press the numbers 1- through 8 on the keyboard
+                        and press
+                        ‘o’ also on the keyboard to clear everything selected in order to move onto the next row.
+                        Pressing the
+                        keys means the white box at the corresponding position turns black letting you know it's that
+                        slot if
+                        pressed. Or if you so chose, you could move the mouse to press the button labelled with the
+                        intended
+                        switch number. This action activated the black and white check also whilst changing the colour
+                        of the
+                        button to further let you know when what buttons are activated or not.
+                        <br> <br>
+                        Both interactions from the
+                        Processing sketch communicate with the Arduino via serial to turn on the respective servo motor
+                        attached
+                        to the corresponding number. The up and down motion created acts as the warp, and the left and
+                        right
+                        motion made by the user acts as the weft to create an interlocked pattern. The warp threads are
+                        held by
+                        individual servos and move up and down when prompted. My loom is designed in the same vein as a
+                        jacquard
+                        loom rather than the traditional rigid loom. You can access each warp individually allowing
+                        practitioners to design an infinite number of patterns. Pattern designs are limited to what you
+                        can
+                        research or conjure up as you go as well as the number of servos attached at one time.
+
+                    </p>
+
+                </div>
+
+
+
+
+            </div>
+
+            <!-- 3 -->
+            <div class="extended-page__empty-section">
+                <!-- controls -->
+                <div class="page__controls">
+
+                    <a href="page-plotter.html"><i class="page-btn fas fa-angle-left"></i></a>
+                    <!-- <i class="fas fa-long-arrow-alt-left"></i> -->
+
+                    <a href="page-plotter.html"><i class=" page-btn fas fa-angle-right"></i></a>
+                    <!-- <i class="fas fa-long-arrow-alt-right"></i> -->
+
+                </div>
+            </div>
+            <!-- end of 3 boxes -->
+
+
+
+        </div>
+        <!-- end of about container  -->
+
+
+
+
+
+
+
+    </div>
+    <!-- end of whole page container -->
+    <script src="index4-sidenav.js"></script>
+    <!-- <script src="gallerycontrols.js"></script> -->
+    <!-- <script src="index4-infobutton.js"></script> -->
+    <script src="index4-dwn-abt-btn.js"></script>
+    <!-- <script src="index4-aboutBtn.js"></script> -->
+</body>
+
+</html>

@@ -9,6 +9,8 @@ const aboutBtn = document.querySelector("#js-aboutme");
 const aboutContainer = document.querySelector(".about__container");
 
 const sidebarLink = document.querySelectorAll(".sidebar__item");
+
+
 // home
 sidebarLink[0].addEventListener("click", e => {
     introCont.style.display = "block";
