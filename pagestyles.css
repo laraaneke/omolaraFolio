@@ -44,9 +44,13 @@ text-align: center;
         /* text-align: center; */
     }
     .extended-page__body-section-text{
-        max-width:90%;
+        max-width:75%;
         margin: 0 auto;
         /* background-color: brown; */
+    }
+    iframe{
+        width:320px;
+        height:215px;
     }
 }
 
@@ -56,7 +60,7 @@ text-align: center;
 }
 
 .extended-page__body-section-text p{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .extended-page__body-section-text h2{
