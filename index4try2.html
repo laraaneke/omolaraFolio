@@ -1,31 +1,47 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recent Graduate looking for a job." />
+
+
+
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
+
+    <!-- more icons -->
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 
     <!-- index 4 stylesheet -->
     <link rel="stylesheet" href="index4try2styles.css" />
 
-    <title>Omolara Aneke</title>
+
+    <!-- normlize cdn -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" /> -->
+
+
+    <title>Omolara Aneke- Recent Graduate </title>
 </head>
 
 <body>
     <div class="page-container">
         <!-- side nav bar /////////////////////////-->
-        <div class="side-nav-container">
+        <nav class="side-nav-container">
             <ul class="side-nav__hamburger-container">
                 <!-- 1 -->
                 <li class="side-nav__social-list-item">
-                    <a href="#" class="side-nav__social-list-link">
+                    <a href="#" title="A navigation hamburger button" class="side-nav__social-list-link">
                         <i class="fas fa-bars side-nav__hamburger" id="ham"></i>
                     </a>
                 </li>
@@ -34,36 +50,40 @@
             <ul class="side-nav__social-container">
                 <!-- 1 -->
                 <li>
-                    <a href="#aboutme" class="side-nav__about-link" id="js-aboutme">ABOUT</a>
+                    <a href="#aboutme" class="side-nav__about-link" id="js-aboutme"
+                        title="A link to about me page">ABOUT</a>
                 </li>
                 <!-- 2 -->
                 <li class="side-nav__social-list-item">
-                    <a href="#" class="side-nav__social-list-link">
+                    <a href="#" class="side-nav__social-list-link" title="A link to Github Repo">
                         <i class="fab fa-github"> </i>
                     </a>
                 </li>
                 <!-- 3 -->
-                <li class="side-nav__social-list-item">
+                <li class="side-nav__social-list-item" title="A link to Linkedin Profile">
                     <a href="#" class="side-nav__social-list-link">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
-                <li class="side-nav__social-list-item">
+                <li class="side-nav__social-list-item" title="A link to Email address">
                     <a href="#" class="side-nav__social-list-link">
                         <i class="fas fa-at"></i>
                     </a>
                 </li>
 
             </ul>
-        </div>
+        </nav>
 
         <!-- side bar////////////////////////// -->
         <section id="sidebar" class="sidebar__container">
             <ul>
-                <li class="sidebar__item"><a class="sidebar__link" href="#">home</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" href="#">contact</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" href="#gallery">portfolio</a></li>
-                <li class="sidebar__item"><a class="sidebar__link" href="#aboutme">about</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#" title="A link to home page">home</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#" title="A link to contact page">contact</a>
+                </li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#gallery"
+                        title="A link to portfolio gallery">portfolio</a></li>
+                <li class="sidebar__item"><a class="sidebar__link" href="#aboutme "
+                        title="A link to about me page">about</a></li>
             </ul>
         </section>
         <!-- end of sliding sidebar -->
@@ -72,7 +92,8 @@
         <div class="page-container__intro">
 
             <h1 class="intro__title">Omolara Aneke</h1>
-            <div class="intro__link general-arrow"><a href="#gallery"><i class="fas fa-angle-down"></i></a></div>
+            <div class="intro__link general-arrow"><a href="#gallery" title="A link to portfolio gallery"><i
+                        class="fas fa-angle-down"></i></a></div>
 
         </div>
         <!--end of page-container intro-->
@@ -221,7 +242,7 @@
                         <br>
 
                     </p>
-                    <a href="#" class="general-button about__link">download cv</a>
+                    <!-- <a href="#" class="general-button about__link">download cv</a> -->
                 </div>
             </div>
 
@@ -238,11 +259,11 @@
             <div class="gallery__image-section">
                 <div class="about__about-me-cont">
                     <h1>contact</h1>
-                    <p style="border: 1px solid black; width:100%; text-align: center;">
-                        Laraaneke@hotmail.com
+                    <address><a href="mailto:omolaraaneke@gmail.com">
+                            omolaraaneke@gmail.com
 
-                    </p>
-                    <a href="#" class="general-button about__link">download cv</a>
+                    </address></a>
+                    <!-- <a href="#" class="general-button about__link">download cv</a> -->
                 </div>
             </div>
 
@@ -344,8 +365,8 @@
 
                         <!-- end of section3 -->
                         <div class="section4">
-                            <a class="section-text-container__button" href="#">GIT REPO</a>
-
+                            <a class="section-text-container__button" href="#" title="A link to Github repo">GIT
+                                REPO</a>
                         </div>
                         <!-- end of section4 -->
                     </div>
@@ -357,7 +378,7 @@
 
                 <!-- 3 -->
                 <div class="extended-page__empty-section">
-                    <a href="#weaving-top" class="up-btn">TOP</a>
+                    <a href="#weaving-top" class="up-btn" title="A link to top top page">TOP</a>
 
                 </div>
                 <!-- end of 3 boxes -->
@@ -519,7 +540,8 @@
                         </div>
                         <!-- end of section3 -->
                         <div class="section4">
-                            <a class="section-text-container__button" href="#">GIT REPO</a>
+                            <a class="section-text-container__button" href="#" title="A link to Github Repo">GIT
+                                REPO</a>
 
                         </div>
                         <!-- end of section4 -->
@@ -532,7 +554,7 @@
 
                 <!-- 3 -->
                 <div class="extended-page__empty-section">
-                    <a href="#plotter-top" class="up-btn">TOP</a>
+                    <a href="#plotter-top" class="up-btn" title="A link to top of page">TOP</a>
 
                 </div>
                 <!-- end of 3 boxes -->
