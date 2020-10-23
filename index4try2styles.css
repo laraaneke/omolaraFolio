@@ -248,7 +248,7 @@ font-size: 1rem;
 }
 .bg-2{
     z-index: -10;
-    background-image: url('images/loom/IMG_20200507_221849.jpg');
+    background-image: url('images/loom/wm1.jpg');
     /* animation: rollWidthImg 2s linear; */
 
 }
@@ -260,7 +260,7 @@ font-size: 1rem;
 }
 .bg-4{
     z-index: -10;  
-      background-image: url('images/loom/IMG_20200507_221849.jpg');
+      background-image: url('images/loom/wmcloseup.jpg');
       /* animation: rollWidthImg 2s linear; */
 
 
@@ -550,7 +550,7 @@ text-transform: uppercase;
 
 
 .extended-page__body-img{
-    background-image: url("images/plotter/DSC_0291.JPG");
+    /* background-image: url("images/plotter/DSC_0291.JPG"); */
     background-position: center;
     background-size: cover;
 }
