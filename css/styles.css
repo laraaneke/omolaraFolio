@@ -173,12 +173,16 @@ li {
     width: 100%;
     background-color: var(--main-bg-col);
     display: flex;
+    background-color: rgb(255, 0, 234);
+    flex-direction: column;
+
+
 }
 
 /* intro omolara aneke text */
 .page-container__intro .intro__title {
     height: 80vh;
-    /* background-color: blue; */
+    background-color: blue;
     min-width: 400px;
     font-size: 3rem;
     color: white;
@@ -226,6 +230,7 @@ li {
     padding: 1rem 2rem;
     font-weight: lighter;
     cursor: pointer;
+    background-color: yellow;
 }
 
 /* down arrow */
